@@ -1,0 +1,316 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header img {
+  width: 50px;
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  color: #006241;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 15px;
+}
+
+nav ul li a:hover {
+  color: white;
+  background-color: #006241;
+  border-radius: 5px;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1500&q=80') center/cover;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.servicios, .about, .feature {
+  padding: 3rem 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.servicios {
+  background-color: #f4f4f4;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.servicios {
+  text-align: center;
+}
+
+.servicio i {
+  font-size: 2rem;
+  color: #006241;
+  margin-bottom: 0.5rem;
+}
+
+.nosotros {
+  grid-template-columns: 1fr;
+  background: #ffffff;
+}
+
+.nosotros div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 50px;
+}
+
+.nosotros button {
+  background-color: #006241;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+}
+
+.feature {
+  background-color: #e8f5e9;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+}
+
+.feature img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.productos {
+  padding: 3rem 2rem;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.productos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #006241;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 70%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.card .price {
+  font-weight: bold;
+  color: #006241;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.boton-comprar {
+  background-color: #006241;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-comprar:hover {
+  background-color: #004d33;
+}
+
+.reserva {
+  background-color: #f4f4f4;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.reserva h2 {
+  color: #006241;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.reserva-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+.reserva-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.reserva-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.reserva-form button {
+  padding: 0.7rem;
+  background-color: #006241;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reserva-form button:hover {
+  background-color: #004d33;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.social i {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #006241;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  background: #004d33;
+}
+
+@media (max-width: 768px) {
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+        
+  header img{
+    width: 40px;
+    margin-left: 10px;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0 auto;
+    padding-left: 2em;
+  }
+
+  .card {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+    width: 90%;
+    height: 0 auto;
+  }
+
+  .card img {
+    border-radius: 5px;
+    width: 30%;
+  }
+  
+  .reserva h2 {
+    font-size: 1.5rem;
+  }
+
+  .reserva-form {
+    padding: 0 1rem;
+  }
+
+  .reserva-form input, .reserva-form button {
+    font-size: 1rem;
+  }
+}
+        
